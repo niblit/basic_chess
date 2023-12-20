@@ -1,0 +1,2 @@
+[workspace]
+members = ["basic_chess_ui", "basic_chess_logic", "basic_chess_engine"]
