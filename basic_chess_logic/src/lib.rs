@@ -1,3 +1,5 @@
+mod board;
+mod coordinates;
 mod pieces;
 
 pub fn add(left: usize, right: usize) -> usize {
