@@ -29,6 +29,11 @@ impl ToString for Piece {
     }
 }
 
+pub enum PieceColor {
+    Black,
+    White,
+}
+
 pub enum PieceType {
     Pawn,
     Knight,
@@ -36,9 +41,4 @@ pub enum PieceType {
     Rook,
     Queen,
     King,
-}
-
-pub enum PieceColor {
-    Black,
-    White,
 }
