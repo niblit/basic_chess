@@ -20,6 +20,14 @@ impl Coordinates {
         return 0 <= value && value <= 7;
     }
 
+    pub fn row(&self) -> usize {
+        self.row
+    }
+
+    pub fn column(&self) -> usize {
+        self.column
+    }
+
     pub fn to_notation(&self) -> String {
         let column_to_letter: HashMap<usize, &str> = HashMap::from([
             (0, "a"),
@@ -33,11 +41,5 @@ impl Coordinates {
         ]);
 
         format!("{}{}", column_to_letter[&self.column], self.row + 1)
-    }
-}
-
-impl ToString for Coordinates {
-    fn to_string(&self) -> String {
-        format!("({},{})", self.column, self.row)
     }
 }
